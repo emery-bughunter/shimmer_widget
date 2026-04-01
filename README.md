@@ -1,17 +1,23 @@
-# semantic_widget
+# shimmer_widget
 
-A new Flutter project.
+A Flutter demo that shows a shimmer loading state and lets you toggle between placeholder content and real list content.
 
-## Getting Started
+## Preview
 
-This project is a starting point for a Flutter application.
+[Shimmer widget preview](docs/images/shimmer-widget-preview.svg)
 
-A few resources to get you started if this is your first Flutter project:
+## Context Used
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+This screen demonstrates a simple loading skeleton UI built with the [`shimmer`](https://pub.dev/packages/shimmer) package.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- A centered toggle button switches between the loading state and the loaded content.
+- The loading state renders four skeleton rows with circular avatar placeholders and text bars.
+- The loaded state swaps those placeholders for real `ListTile` content.
+- The app uses Material 3 styling with a soft neutral color palette to keep the shimmer effect subtle.
+
+## Run The App
+
+```bash
+flutter pub get
+flutter run
+```
